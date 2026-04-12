@@ -12,6 +12,12 @@ const handleCopy = () => {
 
   setTimeout(() => setCopied(false), 2000)
 }
+const handleCopy2 = () => {
+  navigator.clipboard.writeText(data.rekening.number)
+  setCopied(true)
+
+  setTimeout(() => setCopied(false), 2000)
+}
 
   return (
     <section className="py-8 text-center">
@@ -50,7 +56,7 @@ const handleCopy = () => {
   <p className="text-xs mt-1">{data.location.resepsi}</p>
 
   <button
-    onClick={handleCopy}
+    onClick={handleCopy2}
     className={`mt-3 px-4 py-2 text-xs rounded-full text-white shadow transition-all duration-300
     ${copied 
       ? 'bg-green-400 scale-105' 
