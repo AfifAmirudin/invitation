@@ -83,31 +83,6 @@ export default function GuestBook() {
   </div>
 </div>
 
-      {/* <div className="bg-white p-4 rounded-2xl shadow mt-4 w-full max-w-md mx-auto px-4">
-        <input
-          placeholder="Nama"
-          className="w-full mb-2 border p-2 rounded"
-          onChange={(e) => setForm({ ...form, name: e.target.value })}
-        />
-        <textarea
-          placeholder="Ucapan"
-          className="w-full mb-2 border p-2 rounded"
-          onChange={(e) => setForm({ ...form, msg: e.target.value })}
-        />
-        <button onClick={submit} className="bg-black text-white px-4 py-2 rounded">
-          Kirim
-        </button>
-      </div>
-
-      <div className="mt-4 max-h-60 overflow-y-auto w-full max-w-md mx-auto px-4">
-        {list.map((d, i) => (
-          <div key={i} className="border-b py-2">
-            <p className="font-semibold">{d.name}</p>
-            <p>{d.msg}</p>
-          </div>
-        ))}
-      </div> */}
-
       <div className="mt-4 max-h-70 w-full max-w-md mx-auto px-4 overflow-y-auto space-y-3 custom-scroll">
   {list.map((d, i) => (
     <div

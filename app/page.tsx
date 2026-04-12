@@ -9,6 +9,9 @@ import GuestBook from '@/components/GuestBook'
 import Navbar from '@/components/Navbar'
 import MusicPlayer from '@/components/MusicPlayer'
 
+
+export const dynamic = 'force-dynamic'
+
 export default function Page() {
   const [open, setOpen] = useState(false)
   const [playing, setPlaying] = useState(false)
