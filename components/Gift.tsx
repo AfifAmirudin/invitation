@@ -13,7 +13,7 @@ const handleCopy = () => {
   setTimeout(() => setCopied(false), 2000)
 }
 const handleCopy2 = () => {
-  navigator.clipboard.writeText(data.rekening.number)
+  navigator.clipboard.writeText(data.location.resepsi)
   setCopied(true)
 
   setTimeout(() => setCopied(false), 2000)
