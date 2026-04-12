@@ -8,6 +8,7 @@ import Gift from '@/components/Gift'
 import GuestBook from '@/components/GuestBook'
 import Navbar from '@/components/Navbar'
 import MusicPlayer from '@/components/MusicPlayer'
+import { Suspense } from 'react'
 
 
 export const dynamic = 'force-dynamic'
@@ -28,7 +29,11 @@ export default function Page() {
     <main className="bg-gradient-to-b from-rose-50 to-neutral-100 text-neutral-800">
       <MusicPlayer play={open} />
 
-      {!open && <Cover onOpen={() => setOpen(true)} />}
+      {!open && (
+  <Suspense fallback={null}>
+    <Cover onOpen={() => setOpen(true)} />
+  </Suspense>
+)}
 
       {open && (
         <>

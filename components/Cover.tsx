@@ -19,7 +19,9 @@ export default function Cover({ onOpen }: any) {
         Tika & Darul
       </h1>
       <p className="mt-2 text-sm">Kepada Yth.</p>
-      <p className="font-medium text-lg">{guest}</p>
+      <p className="font-medium text-lg">
+  {guest || 'Tamu Undangan'}
+</p>
 
       <button
         onClick={onOpen}

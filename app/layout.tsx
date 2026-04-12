@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   description: 'Kami mengundang Anda untuk hadir di hari bahagia kami.',
 
   openGraph: {
-    title: 'Undangan Pernikahan Alya & Fajar',
+    title: 'Undangan Pernikahan Tika & Darul',
     description: 'Kami mengundang Anda untuk hadir di hari bahagia kami.',
-    url: 'https://domainkamu.vercel.app',
+    url: 'https://tika-darul.vercel.app',
     siteName: 'Wedding Invitation',
     images: [
       {
