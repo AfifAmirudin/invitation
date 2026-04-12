@@ -122,7 +122,7 @@ export default function GuestBook() {
       bg-gradient-to-r from-rose-400 to-pink-300 text-white shadow 
       hover:scale-105 transition"
     >
-      Follow
+      Follow Us
     </a>
 </div>
     </section>

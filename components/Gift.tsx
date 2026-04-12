@@ -4,19 +4,20 @@ import { useState, useEffect } from 'react'
 import { data } from '@/lib/data'
 
 export default function Gift() {
-const [copied, setCopied] = useState(false)
+const [copiedRek, setCopiedRek] = useState(false)
+const [copiedAlamat, setCopiedAlamat] = useState(false)
 
 const handleCopy = () => {
   navigator.clipboard.writeText(data.rekening.number)
-  setCopied(true)
+  setCopiedRek(true)
 
-  setTimeout(() => setCopied(false), 2000)
+  setTimeout(() => setCopiedRek(false), 2000)
 }
 const handleCopy2 = () => {
   navigator.clipboard.writeText(data.location.resepsi)
-  setCopied(true)
+  setCopiedAlamat(true)
 
-  setTimeout(() => setCopied(false), 2000)
+  setTimeout(() => setCopiedAlamat(false), 2000)
 }
 
   return (
@@ -37,12 +38,12 @@ const handleCopy2 = () => {
   <button
     onClick={handleCopy}
     className={`mt-3 px-4 py-2 text-xs rounded-full text-white shadow transition-all duration-300
-    ${copied 
+    ${copiedRek 
       ? 'bg-green-400 scale-105' 
       : 'bg-gradient-to-r from-rose-400 to-pink-300 hover:scale-105'
     }`}
   >
-    {copied ? 'Berhasil Disalin ✓' : 'Salin Nomor Rekening'}
+    {copiedRek ? 'Berhasil Disalin ✓' : 'Salin Nomor Rekening'}
   </button>
 
 </div>
@@ -58,29 +59,16 @@ const handleCopy2 = () => {
   <button
     onClick={handleCopy2}
     className={`mt-3 px-4 py-2 text-xs rounded-full text-white shadow transition-all duration-300
-    ${copied 
+    ${copiedAlamat 
       ? 'bg-green-400 scale-105' 
       : 'bg-gradient-to-r from-rose-400 to-pink-300 hover:scale-105'
     }`}
   >
-    {copied ? 'Berhasil Disalin ✓' : 'Salin Alamat'}
+    {copiedAlamat ? 'Berhasil Disalin ✓' : 'Salin Alamat'}
   </button>
 
 </div>
 
-
-
-      {/* <div className="bg-white p-4 rounded-2xl shadow mt-4 w-full max-w-md mx-auto px-4">
-        <p>{data.rekening.bank}</p>
-        <p className="font-semibold">{data.rekening.number}</p>
-        <button
-          onClick={() => navigator.clipboard.writeText(data.rekening.number)}
-          className="mt-2 text-sm text-blue-500"
-        >
-          Salin Nomor
-        </button>
-        <p>{data.rekening.name}</p>
-      </div> */}
     </section>
   )
 }
