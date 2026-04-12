@@ -16,17 +16,19 @@ export default function MusicPlayer({ play }: { play: boolean }) {
   }, [play])
 
   const fadeIn = () => {
-    let vol = 0
-    const interval = setInterval(() => {
-      if (!audioRef.current) return
-      if (vol >= 1) {
-        clearInterval(interval)
-      } else {
-        vol += 0.05
-        audioRef.current.volume = vol
-      }
-    }, 200)
-  }
+  let vol = 0
+  const interval = setInterval(() => {
+    if (!audioRef.current) return
+
+    if (vol >= 1) {
+      audioRef.current.volume = 1
+      clearInterval(interval)
+    } else {
+      vol = Math.min(vol + 0.05, 1) // ✅ FIX
+      audioRef.current.volume = vol
+    }
+  }, 200)
+}
 
   const toggle = () => {
     if (!audioRef.current) return

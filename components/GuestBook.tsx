@@ -137,7 +137,19 @@ export default function GuestBook() {
 )}
 
 <p className="text-xs text-center tracking-widest mt-6">Special Gift from</p>
-<h2 className="text-sm text-center text-rose-500 tracking-widest mb-16">Dipsy & Husband</h2>
+<h2 className="text-sm text-center text-rose-500 tracking-widest">Dipsy & Husband</h2>
+<div className="text-center">
+
+<a
+      href="https://www.instagram.com/pipsmils/"
+      target="_blank"
+      className="inline-block mt-2 mb-16 text-xs px-4 py-2 rounded-full 
+      bg-gradient-to-r from-rose-400 to-pink-300 text-white shadow 
+      hover:scale-105 transition"
+    >
+      Follow
+    </a>
+</div>
     </section>
   )
 }

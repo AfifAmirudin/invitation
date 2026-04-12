@@ -34,15 +34,7 @@ export default function Page() {
           <Event />
           <Gift />
           <GuestBook />
-          <Navbar
-            playing={playing}
-            toggle={() => {
-              if (!audioRef.current) return
-              if (playing) audioRef.current.pause()
-              else audioRef.current.play()
-              setPlaying(!playing)
-            }}
-          />
+          <Navbar />
         </>
       )}
     </main>
