@@ -2,7 +2,7 @@ export const data = {
   groom: {
     name: 'Darul Mursyidin',
     parent: 'Putra dari Bapak Syuaib & Ibu Masiroh',
-    ig: 'https://www.instagram.com/darulmursyidin1441',
+    ig: 'https://www.instagram.com/darulmursyidin1441/',
     photo: '/groom.jpg',
   },
   bride: {
