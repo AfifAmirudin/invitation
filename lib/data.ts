@@ -13,7 +13,7 @@ export const data = {
   },
   date: {
     akad: '2026-05-29T13:00:00',
-    resepsi: '2026-05-30T10:00:00',
+    resepsi: '2026-05-29T14:00:00',
   },
   location: {
     akad: 'Masjid Nurul Islam Dukuh Lumpang',
