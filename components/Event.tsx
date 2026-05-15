@@ -29,7 +29,7 @@ export default function Event() {
   {/* RESEPSI */}
   <div className="bg-white/80 backdrop-blur p-5 rounded-2xl shadow border border-rose-100">
     <h3 className="text-lg font-semibold text-rose-500">Resepsi</h3>
-    <p className="text-sm mt-2">Jumat, 29 Mei 2026 | 14.00 - Selesai WIB</p>
+    <p className="text-sm mt-2">Jumat, 29 Mei 2026 | 14.00 WIB - Selesai</p>
     <p className="text-[8px] mt-2">{data.location.resepsi}</p>
 
     <a
